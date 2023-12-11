@@ -12,9 +12,53 @@ Email - rahmanfaishal2002@gmail.com -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>
-
+    <div class="navbar">
+        <h1 id="title">SORTING VISUALIZER</h1>
+        <div class="navbar-elements">
+            <div class="array-info">
+                <div>
+                    <p>Sorting Speed</p>
+                    <input type="range" min="0" max="10" step="1" value="7" class="slider">
+                </div>
+                <div>
+                    <p>Array Size</p>
+                    <input type="range" min="25" max="200" step="10" value="100" class="slider">
+                </div>
+                <button id="randomize-button">Randomize Array</button>
+            </div>
+            <div class="custom-select">
+                <select  name="options" id="options" required>
+                    <option value="0">Select Algorithms ...</option>
+                    <option value="Merge">Merge Sort</option>
+                    <option value="Quick">Quick Sort</option>
+                    <option value="Insertion">Insertion Sort</option>
+                    <option value="Bubble">Bubble Sort</option>
+                    <option value="Selection">Selection Sort</option>
+                    <option value="Heap">Heap Sort</option>
+                </select>
+            </div>
+        </div>
     </div>
+    <div class="body">
+        <section class="left" width="25%">
+            <div id="time">
+                <p>Time Complexity</p>
+                <p>Best Case : <span id="best-time"></span></p>
+                <p>Average Case : <span id="avg-time"></span></p>
+                <p>Worst Case : <span id="worst-time"></span></p>
+            </div>
+            <div class="space">
+                <p>Space Complexity : <span id="space-comp"></span></p>
+            </div>
+        </section>
+        <section class="right">
+
+        </section>
+    </div>
+    <!-- <footer class="footer"> -->
+        <!-- Created By - FAISHAL RAHMAN
+        Email Id - rahmanfaishal2002@gmail.com -->
+    <!-- </footer> -->
     <script src="index.js"></script>
 </body>
 </html>
