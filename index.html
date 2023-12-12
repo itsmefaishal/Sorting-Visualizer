@@ -10,6 +10,7 @@ Email - rahmanfaishal2002@gmail.com -->
     <title>Sorting Visualizer</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sorting.css">
 </head>
 <body>
     <div class="navbar">
@@ -18,21 +19,21 @@ Email - rahmanfaishal2002@gmail.com -->
             <div class="array-info">
                 <div>
                     <p>Sorting Speed</p>
-                    <input type="range" min="0" max="10" step="1" value="7" class="slider">
+                    <input id="speed" type="range" min="1" max="5" step="1" value="4" class="slider">
                 </div>
                 <div>
                     <p>Array Size</p>
-                    <input type="range" min="25" max="200" step="10" value="100" class="slider">
+                    <input id="size" type="range" min="20" max="200" step="1" value="100" class="slider">
                 </div>
-                <button id="randomize-button">Randomize Array</button>
+                <button id="randomize-button" >Randomize Array</button>
             </div>
             <div class="custom-select">
                 <select  name="options" id="options" required>
-                    <option value="0">Select Algorithms ...</option>
+                    <option value="none">Select Algorithms ...</option>
                     <option value="Merge">Merge Sort</option>
                     <option value="Quick">Quick Sort</option>
                     <option value="Insertion">Insertion Sort</option>
-                    <option value="Bubble">Bubble Sort</option>
+                    <option value="Bubble" onclick="">Bubble Sort</option>
                     <option value="Selection">Selection Sort</option>
                     <option value="Heap">Heap Sort</option>
                 </select>
@@ -40,25 +41,27 @@ Email - rahmanfaishal2002@gmail.com -->
         </div>
     </div>
     <div class="body">
-        <section class="left" width="25%">
-            <div id="time">
+        <div id="time">
                 <p>Time Complexity</p>
-                <p>Best Case : <span id="best-time"></span></p>
-                <p>Average Case : <span id="avg-time"></span></p>
-                <p>Worst Case : <span id="worst-time"></span></p>
-            </div>
-            <div class="space">
-                <p>Space Complexity : <span id="space-comp"></span></p>
-            </div>
-        </section>
-        <section class="right">
+                <br>
+                <p>Best Case : <br> <span id="best-time"></span></p>
+                <p>Average Case : <br> <span id="avg-time"></span></p>
+                <p>Worst Case : <br> <span id="worst-time"></span></p>
+        </div>
+        <div id="array-container">
 
-        </section>
+        </div>
+        <div class="space">
+            <p>Space Complexity : <br> <span id="space-comp"></span></p>
+        </div>
     </div>
-    <!-- <footer class="footer"> -->
-        <!-- Created By - FAISHAL RAHMAN
-        Email Id - rahmanfaishal2002@gmail.com -->
-    <!-- </footer> -->
-    <script src="index.js"></script>
+    <script src="./script/index.js"></script>
+    <script src="./script/Bubble.js"></script>
+    <script src="./script/Merge.js"></script>
+    <script src="./script/Insertion.js"></script>
+    <script src="./script/Selection.js"></script>
+    <script src="./script/Heap.js"></script>
+    <script src="./script/Quick.js"></script>
+    <script src="./script/visuals.js"></script>
 </body>
 </html>
