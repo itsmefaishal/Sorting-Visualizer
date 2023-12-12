@@ -9,6 +9,7 @@ var arraySpeed = document.getElementById("speed");
 var algoSpeed = arraySpeed.value;
 array_container.style = "flex-direction : row";
 
+
 var allAlgorithms = document.getElementById("options");
 
 getRandomButton.addEventListener("click", generateArray);
@@ -25,8 +26,8 @@ function generateArray(){
     divSizes[i] = Math.floor(Math.random() * 0.5 * (inputArraySize.max - inputArraySize.min)) + 10;
     div[i] = document.createElement("div");
     array_container.appendChild(div[i]);
-    marginSize = 0.1115;
-    div[i].style = " margin: " + marginSize + "%; background-color:blue; width:" + (100/arraySize-(2*marginSize)) + "%; height:" + (divSizes[i]) + "%;";
+    marginSize = 0.1;
+    div[i].style = " margin: " + marginSize + "%; background-color:blue; width:" + (100/(arraySize-(2*marginSize))) + "%; height:" + (divSizes[i]) + "%;";
   }
 
 }
@@ -42,14 +43,14 @@ window.onload = updateArraySize();
 allAlgorithms.addEventListener("change", runAlgo);
 
 function disableOptions() {
-  for (var i = 0; i < allAlgorithms.length; i++) {
+  for (var i = 1; i < allAlgorithms.length; i++) {
     allAlgorithms[i].classList.add("disabled");
     allAlgorithms[i].disabled = true;
   }
 
-  arraySize.disabled = true;
+  inputArraySize.disabled = true;
   getRandomButton.disabled = true;
-  algoSpeed.disabled = true;
+  arraySpeed.disabled = true;
 }
 
 function runAlgo(){
