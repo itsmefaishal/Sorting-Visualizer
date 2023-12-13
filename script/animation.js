@@ -26,9 +26,9 @@ function speedOfAlgorithm(){
                 break;
         case 8: speed=6000;
                 break;
-        case 9: speed=8000;
+        case 9: speed=10000;
                 break;
-        case 10: speed=10000;
+        case 10: speed=100000;
                 break;
     }
     delayTime = 100000/(Math.floor(arraySize/10) * speed);

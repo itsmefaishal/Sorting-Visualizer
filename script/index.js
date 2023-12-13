@@ -43,7 +43,7 @@ window.onload = updateArraySize();
 allAlgorithms.addEventListener("change", runAlgo);
 
 function disableOptions() {
-  for (var i = 1; i < allAlgorithms.length; i++) {
+  for (var i = 0; i < allAlgorithms.length; i++) {
     allAlgorithms[i].classList.add("disabled");
     allAlgorithms[i].disabled = true;
   }
@@ -57,9 +57,10 @@ function runAlgo(){
   disableOptions();
 
   var selected = allAlgorithms.value;
-  allAlgorithms.classList.add("selected");
+  allAlgorithms.classList.add("selected"); 
 
   if(selected == "none"){
+    c_delay = 0;
     enable_buttons();
     return;
   }
