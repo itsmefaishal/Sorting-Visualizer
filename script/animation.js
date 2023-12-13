@@ -1,7 +1,7 @@
 // Project By - Faishal Rahman
 // Email - rahmanfaishal2002@gmail.com
 
-let speed;
+var speed = 500;
 
 arraySpeed.addEventListener("input", speedOfAlgorithm);
 
@@ -10,38 +10,39 @@ function speedOfAlgorithm(){
     var arrSpeed = arraySpeed.value;
 
     switch(parseInt(arrSpeed)){
-        case 1: speed=50;
+        case 1: speed=10;
                 break;
-        case 2: speed=100;
+        case 2: speed=50;
                 break;
-        case 3: speed=250;
+        case 3: speed=100;
                 break;
-        case 4: speed=500;
+        case 4: speed=200;
                 break;
-        case 5: speed=1000;
+        case 5: speed=500;
                 break;
-        case 6: speed=2000;
+        case 6: speed=1000;
                 break;
         case 7: speed=3000;
                 break;
-        case 8: speed=5000;
+        case 8: speed=6000;
                 break;
-        case 9: speed=7500;
+        case 9: speed=8000;
                 break;
         case 10: speed=10000;
                 break;
     }
-
-    delayTime = 10000/(Math.floor(arraySize/10) * speed);
+    delayTime = 100000/(Math.floor(arraySize/10) * speed);
 }
 
-var delayTime = 10000/(Math.floor(arraySize/10) * speed);
-
+var delayTime = 100000/(Math.floor(arraySize/10) * speed);
 var c_delay = 0;
 
 function div_update(array_container, height, color){
+
     window.setTimeout(function(){
-        array_container.style = " margin:0% " + marginSize + "%; width:" + (100/arraySize-(2*marginSize)) + "%; height:" + height + "%; background-color:" + color + ";";
+        if (array_container) {
+                array_container.style = "margin: 0% " + marginSize + "%; width:" + (100/arraySize-(2*marginSize)) + "%; height:" + height + "%; background-color:" + color + ";";
+        }   
     }, c_delay += delayTime );
 }
 

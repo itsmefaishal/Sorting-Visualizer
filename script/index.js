@@ -60,6 +60,7 @@ function runAlgo(){
   allAlgorithms.classList.add("selected");
 
   if(selected == "none"){
+    enable_buttons();
     return;
   }
   switch(selected){
