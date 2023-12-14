@@ -1,6 +1,8 @@
 This is a Sorting Visualizer created by Faishal Rahman
 Email id - rahmanfaishal2002@gmail.com
 
+You can check the live project on this link - https://sorting-visualizer-faishal.netlify.app/
+
 This Sorting Visualizer works on -
 1. Merge Sort
 2. Quick Sort

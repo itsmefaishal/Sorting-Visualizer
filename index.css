@@ -162,4 +162,34 @@ body{
     text-align: center;
 }
 
-  
+@media only screen and (max-width: 900px) {
+    /* Adjust font sizes and margins for smaller screens */
+    *{
+        font-size: medium;
+    }
+    .navbar-elements {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-select select {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .array-info div,
+    button {
+        margin: 0 0 10px;
+    }
+
+    .button {
+        padding: 10px;
+    }
+
+    .array-info div .slider {
+        width: 100%;
+    }
+}
+
+/* Project By - Faishal Rahman
+Email - rahmanfaishal2002@gmail.com */

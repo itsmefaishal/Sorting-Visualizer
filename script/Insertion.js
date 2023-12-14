@@ -52,6 +52,8 @@ function insertionSort(n){
         for(var k = 0; k < i; k++){
             div_update(div[k], divSizes[k], "#04AA6D");
         }
-        // div_update(div[j+1], divSizes[j+1], "#04AA6D");
     }
 }
+
+// Project By - Faishal Rahman
+// Email - rahmanfaishal2002@gmail.com

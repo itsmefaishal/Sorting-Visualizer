@@ -46,3 +46,6 @@ function selectionSort(n){
         div_update(div[i], divSizes[i], "#04AA6D");
     }
 }
+
+// Project By - Faishal Rahman
+// Email - rahmanfaishal2002@gmail.com
